@@ -7,7 +7,6 @@
       name="description"
       content="Yufeng Li is a Ph.D. student working on embodied intelligence, scientific robotics, safe reinforcement learning, optimal transport, and generative models."
     />
-    <meta name="theme-color" content="#0f766e" />
     <meta property="og:title" content="Yufeng Li | 李雨峰" />
     <meta
       property="og:description"
@@ -17,442 +16,320 @@
     <meta property="og:image" content="assets/profile.jpg" />
     <title>Yufeng Li | 李雨峰</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="assets/profile.jpg" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
 
+  <body>
     <header class="site-header">
-      <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Yufeng Li homepage">
-          <span class="brand-mark">YL</span>
-          <span class="brand-text">Yufeng Li</span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
           <span class="sr-only">Toggle navigation</span>
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div class="nav-links" id="nav-links">
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a class="active" href="#about">about</a></li>
+          <li><a href="#updates">updates</a></li>
+          <li><a href="#publications">publications</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="assets/Yufeng_Li_CV.pdf">CV</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="hero section-band" id="top">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Ph.D. Student · Embodied Intelligence · Scientific Robotics</p>
-            <h1>Yufeng Li <span>李雨峰</span></h1>
-            <p class="lead">
-              I work on embodied intelligence for safety-critical robotic systems, with a focus on
-              scientific laboratories, dexterous manipulation, safe reinforcement learning, optimal
-              transport, and generative policy learning.
-            </p>
+    <main class="container" id="about">
+      <section class="intro">
+        <h1><strong>Yufeng Li</strong> <span>李雨峰</span></h1>
+        <p class="subtitle">Ph.D. Student @ Shanghai Jiao Tong University</p>
 
-            <div class="affiliation-list" aria-label="Affiliations">
-              <div>
-                <strong>Shanghai Jiao Tong University</strong>
-                <span>Ph.D. student, advised by Prof. Junchi Yan</span>
+        <figure class="profile">
+          <img src="assets/profile.jpg" alt="Portrait of Yufeng Li" width="220" height="281" />
+        </figure>
+
+        <p>
+          I am a Ph.D. student at <strong>Shanghai Jiao Tong University</strong>, advised by
+          Prof. <strong>Junchi Yan</strong>. I am also jointly trained at
+          <strong>Beijing Zhongguancun College</strong>, advised by Researcher
+          <strong>Kai Chen</strong>.
+        </p>
+
+        <p>
+          My research focuses on <strong>embodied intelligence</strong> for precise and
+          safety-critical robotic systems. I am interested in scientific robotics, dexterous
+          manipulation, vision-language-action models, safe reinforcement learning, optimal
+          transport, and generative policy learning.
+        </p>
+
+        <p>
+          Recent projects study how robots can operate in chemical-laboratory environments, how
+          VLA models can specialize task-relevant action factors, and how optimal-flow views can
+          support safer reinforcement learning.
+        </p>
+
+        <p class="links">
+          <strong>Contact:</strong>
+          <a href="mailto:liyufeng854@gmail.com">liyufeng854@gmail.com</a>
+          <br />
+          <strong>Follow:</strong>
+          <a href="https://github.com/asimfish">GitHub</a>
+          <span>|</span>
+          <a href="assets/Yufeng_Li_CV.pdf">CV</a>
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="news" id="updates">
+        <h2>Updates</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>[2026]</td>
+              <td>
+                <strong>SafeLab</strong> is listed in my CV as ICML 2026 work on embodied
+                safety in scientific robotics.
+              </td>
+            </tr>
+            <tr>
+              <td>[2026]</td>
+              <td>
+                <strong>GuidedVLA</strong> is listed as RSS 2026 work on plug-and-play
+                action-attention specialization for task-relevant factors.
+              </td>
+            </tr>
+            <tr>
+              <td>[2025]</td>
+              <td>
+                <strong>Optimal Flow Transport</strong> is listed as ICLR 2025 work on a
+                GPU-friendly matrix iterative algorithm for flow balance constraints.
+              </td>
+            </tr>
+            <tr>
+              <td>[2024]</td>
+              <td>
+                <strong>REFRAME</strong> was presented at ECCV 2024 for real-time reflective
+                surface rendering on mobile devices.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <section class="publications" id="publications">
+        <h2>Selected Publications</h2>
+        <p class="note">
+          (* Equal contribution where marked in the CV. Manuscript status follows the uploaded CV.)
+        </p>
+
+        <ol class="bibliography">
+          <li>
+            <div class="paper">
+              <div class="title">
+                SafeLab: An Interactive High-Fidelity Benchmark for Embodied Safety in Scientific
+                Robotics
               </div>
-              <div>
-                <strong>Beijing Zhongguancun College</strong>
-                <span>Joint research training, advised by Researcher Kai Chen</span>
+              <div class="authors">
+                F. Bai*, <em>Y. Li*</em>, R. Wu, P. Wang, Y. Wang, B. H. Zhu, Y. Wang,
+                T. Chou, J. Gao, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.
+              </div>
+              <div class="venue">International Conference on Machine Learning (ICML), 2026</div>
+              <div class="summary">
+                High-fidelity chemical-lab benchmark with LLM-programmed task synthesis, automated
+                expert demonstrations, and interactive RL post-training.
               </div>
             </div>
+          </li>
 
-            <div class="hero-actions" aria-label="Profile links">
-              <a class="button primary" href="assets/Yufeng_Li_CV.pdf">Download CV</a>
-              <a class="button" href="mailto:liyufeng854@gmail.com">Email</a>
-              <a class="button" href="https://github.com/asimfish">GitHub</a>
+          <li>
+            <div class="paper">
+              <div class="title">
+                Optimal Flow Transport and its Entropic Regularization: a GPU-friendly Matrix
+                Iterative Algorithm for Flow Balance Satisfaction
+              </div>
+              <div class="authors"><em>L. Shi*</em>, <em>Y. Li*</em>, K. Zeng, Y. Tu, J. Yan, et al.</div>
+              <div class="venue">International Conference on Learning Representations (ICLR), 2025</div>
+              <div class="summary">
+                A matrix-iterative optimal transport algorithm for satisfying node and edge flow
+                balance constraints in graph-structured problems.
+              </div>
             </div>
-          </div>
+          </li>
 
-          <aside class="profile-panel" aria-label="Profile summary">
-            <img src="assets/profile.jpg" alt="Portrait of Yufeng Li" width="220" height="281" />
-            <div class="profile-meta">
-              <p>Research directions</p>
-              <ul>
-                <li>Embodied AI and VLA models</li>
-                <li>Scientific robotics safety</li>
-                <li>Dexterous manipulation</li>
-                <li>Optimal transport and safe RL</li>
-              </ul>
+          <li>
+            <div class="paper">
+              <div class="title">
+                GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention
+                Specialization
+              </div>
+              <div class="authors">
+                X. Jia, B. Yang, Z. Ge, X. Nie, Y. Zhou, C. Fan, <em>Y. Li</em>, Y. Chai,
+                C. Jing, Z. Liang, Q. Bu, H. Cao, C. Wu, Q. Li, Z. Yang, C. Zhang, H. Li,
+                Z. Wu, J. Yan, Y.-G. Jiang
+              </div>
+              <div class="venue">Robotics: Science and Systems (RSS), 2026</div>
+              <div class="summary">
+                Decouples object pointing, spatial geometry, and timing skill factors by
+                specializing action-decoder attention heads.
+              </div>
             </div>
-          </aside>
-        </div>
+          </li>
+
+          <li>
+            <div class="paper">
+              <div class="title">REFRAME: Reflective Surface Real-Time Rendering for Mobile Devices</div>
+              <div class="authors">C. Ji, <em>Y. Li</em>, Y. Liao, et al.</div>
+              <div class="venue">European Conference on Computer Vision (ECCV), 2024</div>
+              <div class="summary">
+                Real-time novel-view synthesis pipeline for reflective surfaces on mobile devices.
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="paper">
+              <div class="title">
+                GEARS: Seeing Geometry, Diffusing Actions for Zero-Shot Sim-to-Real Dexterous
+                Manipulation
+              </div>
+              <div class="authors">
+                F. Bai, T. Chou, <em>Y. Li</em>, Y. Li, Y. Wang, Y. Mao, H. Zhang,
+                Y. Wang, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.
+              </div>
+              <div class="venue">Submitted to ECCV, 2026</div>
+              <div class="summary">
+                Combines texture-independent geometric representation learning with diffusion
+                action modeling for zero-shot sim-to-real dexterous manipulation.
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="paper">
+              <div class="title">SafeTransport: A Unified Capacity-Flow View of Safe Reinforcement Learning</div>
+              <div class="authors"><em>Y. Li</em>, F. Bai, T. Chou, Q. Li, J. Gao, J. Yan</div>
+              <div class="venue">Submitted to NeurIPS, 2026</div>
+              <div class="summary">
+                A capacity-flow formulation of safe reinforcement learning inspired by optimal flow
+                transport and constrained policy optimization.
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="paper">
+              <div class="title">
+                Rsync: Reward-Manifold Driven Adaptive Synchronization for Sample-Efficient
+                Real-World Reinforcement Learning
+              </div>
+              <div class="authors">
+                Y. Cai, F. Bai, T. Yu, Y. Pu, Y. Mao, Y. Wang, T. Chou, <em>Y. Li</em>,
+                Y. Li, Y. Yang, H. Zhang, M. Li, Y. Chen, et al.
+              </div>
+              <div class="venue">Submitted to NeurIPS, 2026</div>
+              <div class="summary">
+                Learns reward manifolds from successful demonstrations and adapts synchronization
+                using local manifold geometry.
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="paper">
+              <div class="title">
+                Efficient Packaging Line Object Counting by Cross-frame Association with Wavelet
+                Convolutions and Trajectory Compensation
+              </div>
+              <div class="authors">
+                L. Wei, Y. Zhu, <em>Y. Li</em>, M. Qian, X. Zuo, B. Chen, S. Liang,
+                Z. Lin, J. Yan, et al.
+              </div>
+              <div class="venue">IEEE Access, 2025</div>
+              <div class="summary">
+                Wavelet-convolution enhanced detection and cross-frame association for packaging
+                line object counting.
+              </div>
+            </div>
+          </li>
+        </ol>
       </section>
 
-      <section class="section-band compact" aria-labelledby="news-heading">
-        <div class="content-grid">
-          <div class="section-heading">
-            <p class="eyebrow">Updates</p>
-            <h2 id="news-heading">Recent News</h2>
-          </div>
-          <div class="news-list">
-            <article>
-              <time datetime="2026">2026</time>
-              <p><strong>SafeLab</strong> appears in the CV as ICML 2026, introducing an interactive benchmark for embodied safety in scientific robotics.</p>
-            </article>
-            <article>
-              <time datetime="2026">2026</time>
-              <p><strong>GuidedVLA</strong> is listed as RSS 2026 work on plug-and-play action-attention specialization for task-relevant factors.</p>
-            </article>
-            <article>
-              <time datetime="2025">2025</time>
-              <p><strong>Optimal Flow Transport</strong> is listed as ICLR 2025 work on GPU-friendly matrix iteration for flow balance constraints.</p>
-            </article>
-            <article>
-              <time datetime="2024">2024</time>
-              <p><strong>REFRAME</strong> was presented at ECCV 2024 for real-time reflective surface rendering on mobile devices.</p>
-            </article>
-          </div>
-        </div>
+      <hr />
+
+      <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <ul class="compact-list">
+          <li>
+            <strong>Research Intern, Embodied Intelligence, Beijing PsiBot Technology</strong>
+            <span>Sep 2025 - Present</span>
+            <br />
+            Built SafeLab with LLM-based task synthesis and automated expert demonstrations
+            across 6,000+ trajectories, 63 assets, and 64 tasks.
+          </li>
+          <li>
+            <strong>Research Intern, Embodied Intelligence, Inspire Robots</strong>
+            <span>Sep 2025 - Present</span>
+            <br />
+            Worked on action-attention specialization for VLA models, including real-robot
+            evaluation, deployment, and sim-to-real validation.
+          </li>
+          <li>
+            <strong>Recommendation System Algorithm Research Intern, Huawei</strong>
+            <span>Mar 2025 - Sep 2025</span>
+            <br />
+            Built a deployable two-stage dynamic graph embedding system for real-time incremental
+            updates on billion-scale graphs.
+          </li>
+        </ul>
       </section>
 
-      <section class="section-band" id="research" aria-labelledby="research-heading">
-        <div class="content-grid">
-          <div class="section-heading">
-            <p class="eyebrow">Agenda</p>
-            <h2 id="research-heading">Research</h2>
-            <p>
-              My research is organized around reliable embodied systems: how robots perceive,
-              reason, adapt, and remain safe when operating in precise physical environments.
-            </p>
-          </div>
-          <div class="research-grid">
-            <article class="research-card">
-              <span class="research-index">01</span>
-              <h3>Scientific Robotics Safety</h3>
-              <p>
-                Building high-fidelity chemical-lab benchmarks, automated expert demonstrations,
-                and post-training pipelines for zero-tolerance manipulation tasks.
-              </p>
-            </article>
-            <article class="research-card">
-              <span class="research-index">02</span>
-              <h3>Vision-Language-Action Models</h3>
-              <p>
-                Studying action-attention specialization, task-factor disentanglement, and
-                sim-to-real robustness for embodied foundation models.
-              </p>
-            </article>
-            <article class="research-card">
-              <span class="research-index">03</span>
-              <h3>Optimal Transport and Safe RL</h3>
-              <p>
-                Developing matrix-iterative optimal flow transport methods and capacity-flow views
-                for safer, more sample-efficient reinforcement learning.
-              </p>
-            </article>
-            <article class="research-card">
-              <span class="research-index">04</span>
-              <h3>Generative Policy Learning</h3>
-              <p>
-                Combining geometric representations, diffusion actions, reward-manifold learning,
-                and adaptive synchronization for contact-rich dexterous control.
-              </p>
-            </article>
-          </div>
-        </div>
+      <hr />
+
+      <section class="education">
+        <h2>Education and Honors</h2>
+        <ul class="compact-list">
+          <li>
+            <strong>Shanghai Jiao Tong University</strong>, Ph.D. student, 2024 - 2029.
+            Research direction: embodied intelligence, optimal transport, and generative models.
+          </li>
+          <li>
+            <strong>University of Electronic Science and Technology of China</strong>, B.Eng. in
+            Software Engineering, 2020 - 2024. Professional ranking: 1/202.
+          </li>
+          <li>
+            National Scholarship; National Second Prize in Computer Design Contest; Outstanding
+            Graduate of Sichuan Province.
+          </li>
+        </ul>
       </section>
 
-      <section class="section-band subtle" id="publications" aria-labelledby="publications-heading">
-        <div class="content-grid">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2 id="publications-heading">Publications and Manuscripts</h2>
-            <p>
-              Equal contribution is marked with an asterisk where it appears in the CV. Manuscript
-              status follows the uploaded CV.
-            </p>
-          </div>
+      <hr />
 
-          <div class="publication-toolbar" aria-label="Publication filters">
-            <button class="filter-chip active" type="button" data-filter="all">All</button>
-            <button class="filter-chip" type="button" data-filter="robotics">Robotics</button>
-            <button class="filter-chip" type="button" data-filter="learning">Learning</button>
-            <button class="filter-chip" type="button" data-filter="graphics">Graphics</button>
-          </div>
-
-          <div class="publication-list">
-            <article class="publication-card" data-topic="robotics learning">
-              <div class="publication-year">2026</div>
-              <div>
-                <h3>SafeLab: An Interactive High-Fidelity Benchmark for Embodied Safety in Scientific Robotics</h3>
-                <p class="authors">F. Bai*, <strong>Y. Li*</strong>, R. Wu, P. Wang, Y. Wang, B. H. Zhu, Y. Wang, T. Chou, J. Gao, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.</p>
-                <p class="venue">ICML 2026</p>
-                <p>
-                  High-fidelity safety learning benchmark for chemical laboratories, combining
-                  LLM-programmed task synthesis, automated expert demonstrations, and interactive
-                  RL post-training.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="learning">
-              <div class="publication-year">2025</div>
-              <div>
-                <h3>Optimal Flow Transport and its Entropic Regularization</h3>
-                <p class="authors">L. Shi*, <strong>Y. Li*</strong>, K. Zeng, Y. Tu, J. Yan, et al.</p>
-                <p class="venue">ICLR 2025</p>
-                <p>
-                  A GPU-friendly matrix iterative algorithm for satisfying flow balance constraints
-                  in graph-structured optimal transport problems.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="robotics learning">
-              <div class="publication-year">2026</div>
-              <div>
-                <h3>GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization</h3>
-                <p class="authors">X. Jia, B. Yang, Z. Ge, X. Nie, Y. Zhou, C. Fan, <strong>Y. Li</strong>, Y. Chai, C. Jing, Z. Liang, Q. Bu, H. Cao, C. Wu, Q. Li, Z. Yang, C. Zhang, H. Li, Z. Wu, J. Yan, Y.-G. Jiang</p>
-                <p class="venue">RSS 2026</p>
-                <p>
-                  A method for decoupling object pointing, spatial geometry, and timing skill
-                  factors by specializing action-decoder attention heads.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="graphics">
-              <div class="publication-year">2024</div>
-              <div>
-                <h3>REFRAME: Reflective Surface Real-Time Rendering for Mobile Devices</h3>
-                <p class="authors">C. Ji, <strong>Y. Li</strong>, Y. Liao, et al.</p>
-                <p class="venue">ECCV 2024</p>
-                <p>
-                  Real-time novel-view synthesis for reflective surfaces on mobile devices,
-                  targeting efficient rendering of specular objects.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="robotics learning">
-              <div class="publication-year">2026</div>
-              <div>
-                <h3>GEARS: Seeing Geometry, Diffusing Actions for Zero-Shot Sim-to-Real Dexterous Manipulation</h3>
-                <p class="authors">F. Bai, T. Chou, <strong>Y. Li</strong>, Y. Li, Y. Wang, Y. Mao, H. Zhang, Y. Wang, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.</p>
-                <p class="venue">Submitted to ECCV 2026</p>
-                <p>
-                  A framework that learns texture-independent geometric representations from
-                  monocular RGB and couples them with diffusion action modeling.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="learning">
-              <div class="publication-year">2026</div>
-              <div>
-                <h3>SafeTransport: A Unified Capacity-Flow View of Safe Reinforcement Learning</h3>
-                <p class="authors"><strong>Y. Li</strong>, F. Bai, T. Chou, Q. Li, J. Gao, J. Yan</p>
-                <p class="venue">Submitted to NeurIPS 2026</p>
-                <p>
-                  A capacity-flow formulation for safe reinforcement learning inspired by optimal
-                  flow transport and constrained policy optimization.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="robotics learning">
-              <div class="publication-year">2026</div>
-              <div>
-                <h3>Rsync: Reward-Manifold Driven Adaptive Synchronization for Sample-Efficient Real-World Reinforcement Learning</h3>
-                <p class="authors">Y. Cai, F. Bai, T. Yu, Y. Pu, Y. Mao, Y. Wang, T. Chou, <strong>Y. Li</strong>, Y. Li, Y. Yang, H. Zhang, M. Li, Y. Chen, et al.</p>
-                <p class="venue">Submitted to NeurIPS 2026</p>
-                <p>
-                  Learns potential successful reward manifolds from demonstrations and adapts
-                  target-network synchronization using local manifold geometry.
-                </p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-topic="learning">
-              <div class="publication-year">2025</div>
-              <div>
-                <h3>Efficient Packaging Line Object Counting by Cross-Frame Association with Wavelet Convolutions and Trajectory Compensation</h3>
-                <p class="authors">L. Wei, Y. Zhu, <strong>Y. Li</strong>, M. Qian, X. Zuo, B. Chen, S. Liang, Z. Lin, J. Yan, et al.</p>
-                <p class="venue">IEEE Access 2025</p>
-                <p>
-                  A wavelet-convolution enhanced detection pipeline for robust object counting in
-                  packaging-line video data.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
+      <section class="projects">
+        <h2>Selected Code</h2>
+        <ul class="compact-list columns">
+          <li><a href="https://github.com/asimfish/SafeTransport">SafeTransport</a></li>
+          <li><a href="https://github.com/asimfish/chembench">chembench</a></li>
+          <li><a href="https://github.com/asimfish/vla-structural-alignment">vla-structural-alignment</a></li>
+          <li><a href="https://github.com/asimfish/robocore">robocore</a></li>
+          <li><a href="https://github.com/asimfish/embodied-sb-research">embodied-sb-research</a></li>
+          <li><a href="https://github.com/asimfish/super_translate">super_translate</a></li>
+        </ul>
       </section>
 
-      <section class="section-band" id="projects" aria-labelledby="projects-heading">
-        <div class="content-grid">
-          <div class="section-heading">
-            <p class="eyebrow">Code</p>
-            <h2 id="projects-heading">Open Projects</h2>
-            <p>
-              Selected public repositories from the GitHub account currently authenticated on this
-              machine.
-            </p>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card">
-              <h3><a href="https://github.com/asimfish/SafeTransport">SafeTransport</a></h3>
-              <p>Constrained policy optimization via gamma-flow optimal flow transport Sinkhorn.</p>
-              <span>Python</span>
-            </article>
-            <article class="project-card">
-              <h3><a href="https://github.com/asimfish/chembench">chembench</a></h3>
-              <p>Codebase for embodied chemical-lab benchmarking and scientific robotics experiments.</p>
-              <span>Python</span>
-            </article>
-            <article class="project-card">
-              <h3><a href="https://github.com/asimfish/vla-structural-alignment">vla-structural-alignment</a></h3>
-              <p>TriAlign-VLA: structural energy for test-time vision-language-action alignment.</p>
-              <span>Python</span>
-            </article>
-            <article class="project-card">
-              <h3><a href="https://github.com/asimfish/robocore">robocore</a></h3>
-              <p>A unified robotics learning codebase for benchmarks, algorithms, and data formats.</p>
-              <span>Python</span>
-            </article>
-            <article class="project-card">
-              <h3><a href="https://github.com/asimfish/embodied-sb-research">embodied-sb-research</a></h3>
-              <p>Research hub on embodied intelligence, generative policy, and Schrodinger bridge ideas.</p>
-              <span>Python</span>
-            </article>
-            <article class="project-card">
-              <h3><a href="https://github.com/asimfish/super_translate">super_translate</a></h3>
-              <p>Academic paper translation and reading system for research workflows.</p>
-              <span>Python</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-band subtle" id="experience" aria-labelledby="experience-heading">
-        <div class="content-grid">
-          <div class="section-heading">
-            <p class="eyebrow">Background</p>
-            <h2 id="experience-heading">Experience and Education</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-date">2025 - Present</div>
-              <div>
-                <h3>Research Intern, Embodied Intelligence · Beijing PsiBot Technology</h3>
-                <p>
-                  Built SafeLab with LLM-based task synthesis and automated expert demonstrations
-                  across 6,000+ trajectories, 63 assets, and 64 tasks; developed residual RL
-                  post-training for safer task success.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-date">2025 - Present</div>
-              <div>
-                <h3>Research Intern, Embodied Intelligence · Inspire Robots</h3>
-                <p>
-                  Built and evaluated action-attention specialization for VLA models, including
-                  real-robot deployment, protocol design, baseline reproduction, and sim-to-real
-                  validation.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-date">2025</div>
-              <div>
-                <h3>Recommendation System Algorithm Research Intern · Huawei</h3>
-                <p>
-                  Built a two-stage dynamic graph embedding system with HetSGFormer and CPU-based
-                  ILLE for real-time incremental updates on billion-scale graphs.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-date">2024 - 2029</div>
-              <div>
-                <h3>Ph.D. Student · Shanghai Jiao Tong University</h3>
-                <p>
-                  Research direction: embodied intelligence, optimal transport, and generative
-                  models. Advisor: Prof. Junchi Yan.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-date">2020 - 2024</div>
-              <div>
-                <h3>B.Eng. in Software Engineering · University of Electronic Science and Technology of China</h3>
-                <p>
-                  Professional ranking: 1/202. Honors include National Scholarship, national second
-                  prize in the Computer Design Contest, and Outstanding Graduate of Sichuan Province.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-band contact-band" id="contact" aria-labelledby="contact-heading">
-        <div class="contact-shell">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-heading">I am interested in embodied AI, scientific robotics, and safe robot learning.</h2>
-            <p>
-              For research collaboration or academic discussion, the most reliable contact is email.
-            </p>
-          </div>
-          <div class="contact-actions">
-            <a class="button primary" href="mailto:liyufeng854@gmail.com">liyufeng854@gmail.com</a>
-            <a class="button" href="https://github.com/asimfish">github.com/asimfish</a>
-            <a class="button" href="assets/Yufeng_Li_CV.pdf">CV PDF</a>
-          </div>
-        </div>
-      </section>
+      <footer>
+        <p>Last updated: June 2026. Built with GitHub Pages.</p>
+      </footer>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span id="current-year">2026</span> Yufeng Li. Built for GitHub Pages.</p>
-      <a href="#top">Back to top</a>
-    </footer>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Yufeng Li",
-        "alternateName": "李雨峰",
-        "email": "mailto:liyufeng854@gmail.com",
-        "url": "https://asimfish.github.io",
-        "sameAs": ["https://github.com/asimfish"],
-        "affiliation": [
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Shanghai Jiao Tong University"
-          },
-          {
-            "@type": "EducationalOrganization",
-            "name": "Beijing Zhongguancun College"
-          }
-        ],
-        "knowsAbout": [
-          "Embodied AI",
-          "Scientific Robotics",
-          "Dexterous Manipulation",
-          "Safe Reinforcement Learning",
-          "Optimal Transport",
-          "Generative Models"
-        ]
-      }
-    </script>
     <script src="script.js"></script>
   </body>
 </html>

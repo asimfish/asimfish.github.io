@@ -28,6 +28,7 @@
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-brand" href="#about">Yufeng Li</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
           <span class="sr-only">Toggle navigation</span>
           <span></span>
@@ -39,6 +40,7 @@
           <li><a href="#updates">updates</a></li>
           <li><a href="#publications">publications</a></li>
           <li><a href="#experience">experience</a></li>
+          <li><a href="#code">code</a></li>
           <li><a href="assets/Yufeng_Li_CV.pdf">CV</a></li>
         </ul>
       </nav>
@@ -46,42 +48,40 @@
 
     <main class="container" id="about">
       <section class="intro">
-        <h1><strong>Yufeng Li</strong> <span>李雨峰</span></h1>
-        <p class="subtitle">Ph.D. Student @ Shanghai Jiao Tong University</p>
+        <div class="intro-copy">
+          <h1><strong>Yufeng Li</strong> <span>李雨峰</span></h1>
+          <p class="subtitle">Ph.D. Student @ Shanghai Jiao Tong University</p>
+
+          <p>
+            I am a Ph.D. student at <strong>Shanghai Jiao Tong University</strong>, advised by
+            Prof. <strong>Junchi Yan</strong>. I am also jointly trained at
+            <strong>Beijing Zhongguancun College</strong>, advised by Researcher
+            <strong>Kai Chen</strong>.
+          </p>
+
+          <p>
+            My research focuses on <strong>embodied intelligence</strong> for precise and
+            safety-critical robotic systems. I am interested in scientific robotics, dexterous
+            manipulation, vision-language-action models, safe reinforcement learning, optimal
+            transport, and generative policy learning.
+          </p>
+
+          <p class="intro-extra">
+            Recent projects study how robots can operate in chemical-laboratory environments, how
+            VLA models can specialize task-relevant action factors, and how optimal-flow views can
+            support safer reinforcement learning.
+          </p>
+
+          <div class="links" aria-label="Contact and profile links">
+            <a href="mailto:liyufeng854@gmail.com">Email</a>
+            <a href="https://github.com/asimfish">GitHub</a>
+            <a href="assets/Yufeng_Li_CV.pdf">CV</a>
+          </div>
+        </div>
 
         <figure class="profile">
-          <img src="assets/profile.jpg" alt="Portrait of Yufeng Li" width="220" height="281" />
+          <img src="assets/profile.jpg" alt="Portrait of Yufeng Li" width="900" height="1125" />
         </figure>
-
-        <p>
-          I am a Ph.D. student at <strong>Shanghai Jiao Tong University</strong>, advised by
-          Prof. <strong>Junchi Yan</strong>. I am also jointly trained at
-          <strong>Beijing Zhongguancun College</strong>, advised by Researcher
-          <strong>Kai Chen</strong>.
-        </p>
-
-        <p>
-          My research focuses on <strong>embodied intelligence</strong> for precise and
-          safety-critical robotic systems. I am interested in scientific robotics, dexterous
-          manipulation, vision-language-action models, safe reinforcement learning, optimal
-          transport, and generative policy learning.
-        </p>
-
-        <p>
-          Recent projects study how robots can operate in chemical-laboratory environments, how
-          VLA models can specialize task-relevant action factors, and how optimal-flow views can
-          support safer reinforcement learning.
-        </p>
-
-        <p class="links">
-          <strong>Contact:</strong>
-          <a href="mailto:liyufeng854@gmail.com">liyufeng854@gmail.com</a>
-          <br />
-          <strong>Follow:</strong>
-          <a href="https://github.com/asimfish">GitHub</a>
-          <span>|</span>
-          <a href="assets/Yufeng_Li_CV.pdf">CV</a>
-        </p>
       </section>
 
       <hr />
@@ -91,32 +91,22 @@
         <table>
           <tbody>
             <tr>
-              <td>[2026]</td>
+              <td>[Jun. 2026]</td>
+              <td><strong>SafeLab</strong>, ICML 2026.</td>
+            </tr>
+            <tr>
+              <td>[May 2026]</td>
+              <td><strong>GuidedVLA</strong>, RSS 2026.</td>
+            </tr>
+            <tr>
+              <td>[Apr. 2025]</td>
               <td>
-                <strong>SafeLab</strong> is listed in my CV as ICML 2026 work on embodied
-                safety in scientific robotics.
+                <strong>Optimal Flow Transport and its Entropic Regularization</strong>, ICLR 2025.
               </td>
             </tr>
             <tr>
-              <td>[2026]</td>
-              <td>
-                <strong>GuidedVLA</strong> is listed as RSS 2026 work on plug-and-play
-                action-attention specialization for task-relevant factors.
-              </td>
-            </tr>
-            <tr>
-              <td>[2025]</td>
-              <td>
-                <strong>Optimal Flow Transport</strong> is listed as ICLR 2025 work on a
-                GPU-friendly matrix iterative algorithm for flow balance constraints.
-              </td>
-            </tr>
-            <tr>
-              <td>[2024]</td>
-              <td>
-                <strong>REFRAME</strong> was presented at ECCV 2024 for real-time reflective
-                surface rendering on mobile devices.
-              </td>
+              <td>[Oct. 2024]</td>
+              <td><strong>REFRAME</strong>, ECCV 2024.</td>
             </tr>
           </tbody>
         </table>
@@ -126,140 +116,184 @@
 
       <section class="publications" id="publications">
         <h2>Selected Publications</h2>
-        <p class="note">
-          (* Equal contribution where marked in the CV. Manuscript status follows the uploaded CV.)
-        </p>
 
-        <ol class="bibliography">
-          <li>
-            <div class="paper">
-              <div class="title">
+        <div class="pub-list">
+          <article class="pub-card featured">
+            <div class="pub-media video-media">
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/paper-real/safelab.jpg"
+                aria-label="SafeLab demo video"
+              >
+                <source src="assets/safelab/safelab-demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
                 SafeLab: An Interactive High-Fidelity Benchmark for Embodied Safety in Scientific
                 Robotics
-              </div>
-              <div class="authors">
+              </h3>
+              <p class="authors">
                 F. Bai*, <em>Y. Li*</em>, R. Wu, P. Wang, Y. Wang, B. H. Zhu, Y. Wang,
                 T. Chou, J. Gao, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.
-              </div>
-              <div class="venue">International Conference on Machine Learning (ICML), 2026</div>
-              <div class="summary">
+              </p>
+              <p class="venue">International Conference on Machine Learning (ICML), 2026</p>
+              <p class="abstract">
                 High-fidelity chemical-lab benchmark with LLM-programmed task synthesis, automated
                 expert demonstrations, and interactive RL post-training.
+              </p>
+              <div class="pub-links">
+                <a href="https://icml.cc/virtual/2026/poster/61584">Paper</a>
+                <a href="assets/safelab/safelab-demo.mp4">Demo Video</a>
+                <a href="assets/safelab/safelab-talk.mp4">Talk Video</a>
               </div>
             </div>
-          </li>
+          </article>
 
-          <li>
-            <div class="paper">
-              <div class="title">
+          <article class="pub-card">
+            <a class="pub-media" href="https://openreview.net/forum?id=NtSlKEJ2DS">
+              <img src="assets/paper-real/oft.jpg" alt="Optimal Flow Transport figure" />
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
                 Optimal Flow Transport and its Entropic Regularization: a GPU-friendly Matrix
                 Iterative Algorithm for Flow Balance Satisfaction
-              </div>
-              <div class="authors">L. Shi, <em>Y. Li</em>, K. Zeng, Y. Tu, J. Yan, et al.</div>
-              <div class="venue">International Conference on Learning Representations (ICLR), 2025</div>
-              <div class="summary">
+              </h3>
+              <p class="authors">L. Shi, <em>Y. Li</em>, K. Zeng, Y. Tu, J. Yan, et al.</p>
+              <p class="venue">International Conference on Learning Representations (ICLR), 2025</p>
+              <p class="abstract">
                 A matrix-iterative optimal transport algorithm for satisfying node and edge flow
                 balance constraints in graph-structured problems.
+              </p>
+              <div class="pub-links">
+                <a href="https://openreview.net/forum?id=NtSlKEJ2DS">Paper</a>
+                <a href="https://github.com/asimfish/EOFT/">Code</a>
               </div>
             </div>
-          </li>
+          </article>
 
-          <li>
-            <div class="paper">
-              <div class="title">
+          <article class="pub-card">
+            <a class="pub-media" href="https://guidedvla.github.io/project_page/">
+              <img src="assets/paper-real/guidedvla.jpg" alt="GuidedVLA figure" />
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
                 GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention
                 Specialization
-              </div>
-              <div class="authors">
+              </h3>
+              <p class="authors">
                 X. Jia, B. Yang, Z. Ge, X. Nie, Y. Zhou, C. Fan, <em>Y. Li</em>, Y. Chai,
                 C. Jing, Z. Liang, Q. Bu, H. Cao, C. Wu, Q. Li, Z. Yang, C. Zhang, H. Li,
                 Z. Wu, J. Yan, Y.-G. Jiang
-              </div>
-              <div class="venue">Robotics: Science and Systems (RSS), 2026</div>
-              <div class="summary">
+              </p>
+              <p class="venue">Robotics: Science and Systems (RSS), 2026</p>
+              <p class="abstract">
                 Decouples object pointing, spatial geometry, and timing skill factors by
                 specializing action-decoder attention heads.
+              </p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2605.12369">Paper</a>
+                <a href="https://guidedvla.github.io/project_page/">Homepage</a>
               </div>
             </div>
-          </li>
+          </article>
 
-          <li>
-            <div class="paper">
-              <div class="title">REFRAME: Reflective Surface Real-Time Rendering for Mobile Devices</div>
-              <div class="authors">C. Ji, <em>Y. Li</em>, Y. Liao, et al.</div>
-              <div class="venue">European Conference on Computer Vision (ECCV), 2024</div>
-              <div class="summary">
+          <article class="pub-card">
+            <a class="pub-media" href="https://arxiv.org/abs/2403.16481">
+              <img src="assets/paper-real/reframe.jpg" alt="REFRAME rendering comparison figure" />
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">REFRAME: Reflective Surface Real-Time Rendering for Mobile Devices</h3>
+              <p class="authors">C. Ji, <em>Y. Li</em>, Y. Liao, et al.</p>
+              <p class="venue">European Conference on Computer Vision (ECCV), 2024</p>
+              <p class="abstract">
                 Real-time novel-view synthesis pipeline for reflective surfaces on mobile devices.
+              </p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2403.16481">Paper</a>
+                <a href="https://github.com/MARVELOUSJI/REFRAME">Code</a>
+                <a href="https://xdimlab.github.io/REFRAME/">Homepage</a>
               </div>
             </div>
-          </li>
+          </article>
 
-          <li>
-            <div class="paper">
-              <div class="title">
-                GEARS: Seeing Geometry, Diffusing Actions for Zero-Shot Sim-to-Real Dexterous
-                Manipulation
-              </div>
-              <div class="authors">
-                F. Bai, T. Chou, <em>Y. Li</em>, Y. Li, Y. Wang, Y. Mao, H. Zhang,
-                Y. Wang, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.
-              </div>
-              <div class="venue">Submitted to ECCV, 2026</div>
-              <div class="summary">
-                Combines texture-independent geometric representation learning with diffusion
-                action modeling for zero-shot sim-to-real dexterous manipulation.
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="paper">
-              <div class="title">SafeTransport: A Unified Capacity-Flow View of Safe Reinforcement Learning</div>
-              <div class="authors"><em>Y. Li</em>, F. Bai, T. Chou, Q. Li, J. Gao, J. Yan</div>
-              <div class="venue">Submitted to NeurIPS, 2026</div>
-              <div class="summary">
-                A capacity-flow formulation of safe reinforcement learning inspired by optimal flow
-                transport and constrained policy optimization.
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="paper">
-              <div class="title">
-                Rsync: Reward-Manifold Driven Adaptive Synchronization for Sample-Efficient
-                Real-World Reinforcement Learning
-              </div>
-              <div class="authors">
-                Y. Cai, F. Bai, T. Yu, Y. Pu, Y. Mao, Y. Wang, T. Chou, <em>Y. Li</em>,
-                Y. Li, Y. Yang, H. Zhang, M. Li, Y. Chen, et al.
-              </div>
-              <div class="venue">Submitted to NeurIPS, 2026</div>
-              <div class="summary">
-                Learns reward manifolds from successful demonstrations and adapts synchronization
-                using local manifold geometry.
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="paper">
-              <div class="title">
+          <article class="pub-card">
+            <a class="pub-media" href="https://ieeexplore.ieee.org/document/10949074/">
+              <img src="assets/paper-real/packaging.jpg" alt="WT-YOLO architecture figure" />
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
                 Efficient Packaging Line Object Counting by Cross-frame Association with Wavelet
                 Convolutions and Trajectory Compensation
-              </div>
-              <div class="authors">
+              </h3>
+              <p class="authors">
                 L. Wei, Y. Zhu, <em>Y. Li</em>, M. Qian, X. Zuo, B. Chen, S. Liang,
                 Z. Lin, J. Yan, et al.
-              </div>
-              <div class="venue">IEEE Access, 2025</div>
-              <div class="summary">
+              </p>
+              <p class="venue">IEEE Access, 2025</p>
+              <p class="abstract">
                 Wavelet-convolution enhanced detection and cross-frame association for packaging
                 line object counting.
+              </p>
+              <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/document/10949074/">Paper</a>
               </div>
             </div>
-          </li>
-        </ol>
+          </article>
+        </div>
+
+        <div class="manuscript-block">
+          <h3>Additional Manuscripts</h3>
+          <ul>
+            <li>
+              <strong>GEARS: Seeing Geometry, Diffusing Actions for Zero-Shot Sim-to-Real Dexterous
+              Manipulation</strong>
+              <span class="manuscript-authors">
+                F. Bai, T. Chou, <em>Y. Li</em>, Y. Li, Y. Wang, Y. Mao, H. Zhang,
+                Y. Wang, R. Zhu, Y. Wen, Y. Yang, Y. Chen, et al.
+              </span>
+              <span>Submitted to ECCV, 2026.</span>
+            </li>
+            <li>
+              <strong>SafeTransport: A Unified Capacity-Flow View of Safe Reinforcement Learning</strong>
+              <span class="manuscript-authors">
+                <em>Y. Li</em>, F. Bai, T. Chou, Q. Li, J. Gao, J. Yan
+              </span>
+              <span>Submitted to NeurIPS, 2026.</span>
+            </li>
+            <li>
+              <strong>Rsync: Reward-Manifold Driven Adaptive Synchronization for Sample-Efficient
+              Real-World Reinforcement Learning</strong>
+              <span class="manuscript-authors">
+                Y. Cai, F. Bai, T. Yu, Y. Pu, Y. Mao, Y. Wang, T. Chou, <em>Y. Li</em>,
+                Y. Li, Y. Yang, H. Zhang, M. Li, Y. Chen, et al.
+              </span>
+              <span>Submitted to NeurIPS, 2026.</span>
+            </li>
+            <li>
+              <strong>
+                Remembering What Matters: From Markovian to Subtask-Causal Memory in VLA Policies
+              </strong>
+              <span class="manuscript-authors">
+                <a href="https://openreview.net/profile?id=~Peishuo_Wang2">Peishuo Wang</a>,
+                <a href="https://openreview.net/profile?id=~Fengshuo_Bai1">Fengshuo Bai</a>,
+                <a href="https://openreview.net/profile?id=~Yufeng_Li2"><em>Yufeng Li</em></a>,
+                <a href="https://openreview.net/profile?id=~Tawei_Chou1">Tawei Chou</a>,
+                <a href="https://openreview.net/profile?id=~Yinda_Xu1">Yinda Xu</a>,
+                <a href="https://openreview.net/profile?id=~Ying_Wen1">Ying Wen</a>,
+                <a href="https://openreview.net/profile?id=~Yaodong_Yang1">Yaodong Yang</a>,
+                <a href="https://openreview.net/profile?id=~Chen_Gao3">Chen Gao</a>,
+                <a href="https://openreview.net/profile?id=~Zhenzhe_Zheng1">Zhenzhe Zheng</a>,
+                <a href="https://openreview.net/profile?id=~Fan_Wu10">Fan Wu</a>
+              </span>
+              <span>Submitted to NeurIPS, 2026.</span>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <hr />
@@ -298,26 +332,48 @@
             Software Engineering, 2020 - 2024. Professional ranking: 1/202.
           </li>
           <li>
-            National Scholarship; National Second Prize in Computer Design Contest; Outstanding
-            Graduate of Sichuan Province.
+            National Scholarship in 2021 and 2023; National Second Prize in Computer Design
+            Contest; Outstanding Graduate of Sichuan Province.
           </li>
         </ul>
       </section>
 
       <hr />
 
-      <section class="projects">
+      <section class="projects" id="code">
         <h2>Selected Code</h2>
-        <ul class="compact-list">
-          <li>
-            <strong>DevTwin</strong>
-            <br />
-            A local-first programmer digital-twin system that observes terminal, git, and AI-agent
-            interaction traces, models a developer's workflow and cognitive preferences, and exports
-            executable behavior specifications such as ClawProfile / CLAUDE.md for more personalized
-            AI coding agents.
-          </li>
-        </ul>
+        <article class="code-card">
+          <div class="code-media">
+            <video
+              controls
+              muted
+              preload="metadata"
+              poster="assets/shrimpflow/poster.jpg"
+              src="assets/shrimpflow/demo.mp4"
+            ></video>
+          </div>
+          <div class="code-body">
+            <div class="code-kicker">Local-first AI workflow system</div>
+            <h3>ShrimpFlow</h3>
+            <p>
+              A programmer workflow system that observes terminal, git, and AI-agent interaction
+              traces, models a developer's workflow and cognitive preferences, and exports executable
+              behavior specifications such as ClawProfile / CLAUDE.md for personalized AI coding
+              agents.
+            </p>
+            <ul class="code-points">
+              <li>Shadow layer: terminal, git, agent-session, and environment event collection.</li>
+              <li>Brain layer: workflow, preference, decision, and temporal pattern modeling.</li>
+              <li>Autopilot layer: portable behavior specs for downstream coding agents.</li>
+            </ul>
+            <div class="pub-links">
+              <a href="https://github.com/asimfish/ShrimpFlow">GitHub</a>
+              <a href="https://asimfish.github.io/ShrimpFlow/shrimpflow_workflow.html">Live workflow</a>
+              <a href="assets/shrimpflow/demo.mp4">MP4 demo</a>
+              <a href="https://www.bilibili.com/video/BV1UBAVzyErU/?vd_source=082c9486c13eeaf225d08c23aeccd98c#reply116256560646936">Bilibili demo</a>
+            </div>
+          </div>
+        </article>
       </section>
 
       <footer>

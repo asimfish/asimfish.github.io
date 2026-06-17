@@ -42,6 +42,7 @@ https://asimfish.github.io
 - `index.html` - homepage content and semantic structure
 - `styles.css` - responsive academic homepage styling
 - `script.js` - mobile navigation and publication filtering
+- `favicon.svg` - small browser tab icon
 - `assets/profile.jpg` - profile photo
 - `assets/Yufeng_Li_CV.pdf` - downloadable CV
 - `.nojekyll` - tells GitHub Pages to publish the static files directly

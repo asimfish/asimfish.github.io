@@ -175,7 +175,8 @@ hr {
 .publications,
 .experience,
 .education,
-.projects {
+.projects,
+.visitors {
   border: 1px solid rgba(217, 227, 239, 0.72);
   border-radius: var(--radius);
   background: var(--card);
@@ -299,7 +300,8 @@ h3 {
 .publications,
 .experience,
 .education,
-.projects {
+.projects,
+.visitors {
   margin-top: 24px;
   padding: 30px 34px;
 }
@@ -536,6 +538,73 @@ h3 {
   columns: 2;
 }
 
+.visitors {
+  overflow: hidden;
+}
+
+.visitors-heading {
+  display: flex;
+  gap: 28px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.visitors-heading h2 {
+  margin-bottom: 0;
+}
+
+.visitors-heading > p {
+  max-width: 380px;
+  margin: 0 0 2px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.visitors-kicker {
+  margin: 0 0 3px;
+  color: var(--link);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.visitor-map {
+  width: min(760px, 100%);
+  min-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: #225f86;
+  box-shadow: 0 12px 28px rgba(22, 61, 91, 0.18);
+}
+
+#mapmyvisitors-widget {
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.visitor-map noscript a,
+.visitor-map noscript img {
+  display: block;
+  width: 100%;
+}
+
+.visitor-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.visitor-note a {
+  margin-left: 5px;
+  font-weight: 650;
+}
+
 footer {
   margin-top: 22px;
   color: var(--muted);
@@ -571,7 +640,8 @@ footer p {
   .publications,
   .experience,
   .education,
-  .projects {
+  .projects,
+  .visitors {
     padding: 24px 22px;
   }
 
@@ -648,8 +718,23 @@ footer p {
   .publications,
   .experience,
   .education,
-  .projects {
+  .projects,
+  .visitors {
     border-radius: var(--radius);
+  }
+
+  .visitors-heading {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .visitors-heading > p {
+    margin-top: 7px;
+    text-align: left;
+  }
+
+  .visitor-map {
+    min-height: 0;
   }
 
   .intro {

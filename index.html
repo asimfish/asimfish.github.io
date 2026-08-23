@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -90,6 +90,13 @@
         <h2>Updates</h2>
         <table>
           <tbody>
+            <tr class="award-update">
+              <td>[Aug. 2026]</td>
+              <td>
+                <strong>SynMatAI AI4S Future ScienceSkills Hackathon</strong> - Champion
+                (1st of 43 teams).
+              </td>
+            </tr>
             <tr>
               <td>[Jun. 2026]</td>
               <td><strong>SafeLab</strong>, ICML 2026.</td>
@@ -332,6 +339,7 @@
             Software Engineering, 2020 - 2024. Professional ranking: 1/202.
           </li>
           <li>
+            Champion, SynMatAI AI4S Future ScienceSkills Hackathon, 2026 (1st of 43 teams);
             National Scholarship in 2021 and 2023; National Second Prize in Computer Design
             Contest; Outstanding Graduate of Sichuan Province.
           </li>
@@ -342,38 +350,74 @@
 
       <section class="projects" id="code">
         <h2>Selected Project</h2>
-        <article class="code-card">
-          <div class="code-media">
-            <video
-              controls
-              muted
-              preload="metadata"
-              poster="assets/shrimpflow/poster.jpg"
-              src="assets/shrimpflow/demo.mp4"
-            ></video>
-          </div>
-          <div class="code-body">
-            <div class="code-kicker">Local-first AI workflow system</div>
-            <h3>ShrimpFlow</h3>
-            <p>
-              A programmer workflow system that observes terminal, git, and AI-agent interaction
-              traces, models a developer's workflow and cognitive preferences, and exports executable
-              behavior specifications such as ClawProfile / CLAUDE.md for personalized AI coding
-              agents.
-            </p>
-            <ul class="code-points">
-              <li>Shadow layer: terminal, git, agent-session, and environment event collection.</li>
-              <li>Brain layer: workflow, preference, decision, and temporal pattern modeling.</li>
-              <li>Autopilot layer: portable behavior specs for downstream coding agents.</li>
-            </ul>
-            <div class="pub-links">
-              <a href="https://github.com/asimfish/ShrimpFlow">GitHub</a>
-              <a href="https://asimfish.github.io/ShrimpFlow/shrimpflow_workflow.html">Live workflow</a>
-              <a href="assets/shrimpflow/demo.mp4">MP4 demo</a>
-              <a href="https://www.bilibili.com/video/BV1UBAVzyErU/?vd_source=082c9486c13eeaf225d08c23aeccd98c#reply116256560646936">Bilibili demo</a>
+        <div class="project-list">
+          <article class="code-card atlas-card">
+            <a
+              class="code-media atlas-media"
+              href="https://asimfish.github.io/global-geochemical-atlas-demo"
+            >
+              <img
+                src="assets/global-geochemical-atlas/overview.png"
+                alt="Global Geochemical Atlas Skill project overview and hackathon champion announcement"
+                width="1162"
+                height="1590"
+              />
+            </a>
+            <div class="code-body">
+              <div class="code-kicker project-award">Hackathon Champion | Agentic Science Skill</div>
+              <h3>Global Geochemical Atlas Skill</h3>
+              <p class="project-lead">
+                One prompt turns a research question into a trustworthy, traceable, and interactive
+                atlas of the temporal evolution of global geochemical element distributions.
+              </p>
+              <p>
+                Global Geochemical Atlas Skill translates heterogeneous requests from researchers
+                into one unified, Agentic-Native workflow for trustworthy, interactive, traceable,
+                and time-aware geochemical research.
+              </p>
+              <div class="pub-links">
+                <a href="https://asimfish.github.io/global-geochemical-atlas-demo">Homepage</a>
+                <a href="https://github.com/asimfish/global-geochemical-atlas-skill">GitHub</a>
+                <a href="https://asimfish.github.io/global-geochemical-atlas-demo/slides.html">Slides</a>
+                <a href="https://zhuanlan.zhihu.com/p/2073539526404879853?share_code=11ukxIs8Fpqly&amp;utm_psn=2074179268779696982">Zhihu</a>
+                <a href="https://xhslink.cn/o/7EMuFyOOsO5">Xiaohongshu</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+
+          <article class="code-card">
+            <div class="code-media">
+              <video
+                controls
+                muted
+                preload="metadata"
+                poster="assets/shrimpflow/poster.jpg"
+                src="assets/shrimpflow/demo.mp4"
+              ></video>
+            </div>
+            <div class="code-body">
+              <div class="code-kicker">Local-first AI workflow system</div>
+              <h3>ShrimpFlow</h3>
+              <p>
+                A programmer workflow system that observes terminal, git, and AI-agent interaction
+                traces, models a developer's workflow and cognitive preferences, and exports executable
+                behavior specifications such as ClawProfile / CLAUDE.md for personalized AI coding
+                agents.
+              </p>
+              <ul class="code-points">
+                <li>Shadow layer: terminal, git, agent-session, and environment event collection.</li>
+                <li>Brain layer: workflow, preference, decision, and temporal pattern modeling.</li>
+                <li>Autopilot layer: portable behavior specs for downstream coding agents.</li>
+              </ul>
+              <div class="pub-links">
+                <a href="https://github.com/asimfish/ShrimpFlow">GitHub</a>
+                <a href="https://asimfish.github.io/ShrimpFlow/shrimpflow_workflow.html">Live workflow</a>
+                <a href="assets/shrimpflow/demo.mp4">MP4 demo</a>
+                <a href="https://www.bilibili.com/video/BV1UBAVzyErU/?vd_source=082c9486c13eeaf225d08c23aeccd98c#reply116256560646936">Bilibili demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="visitors" aria-labelledby="visitors-heading">

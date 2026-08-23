@@ -322,6 +322,10 @@ h3 {
   white-space: nowrap;
 }
 
+.news .award-update td:last-child {
+  color: #604a08;
+}
+
 .pub-list {
   display: grid;
   gap: 22px;
@@ -375,6 +379,7 @@ h3 {
 
 .pub-media img,
 .pub-media video,
+.code-media img,
 .code-media video {
   width: 100%;
   height: 100%;
@@ -393,6 +398,7 @@ h3 {
 
 .pub-card:hover .pub-media img,
 .pub-card:hover .pub-media video,
+.code-card:hover .code-media img,
 .code-card:hover .code-media video {
   transform: scale(1.025);
 }
@@ -513,6 +519,32 @@ h3 {
 
 .code-card {
   align-items: center;
+}
+
+.project-list {
+  display: grid;
+  gap: 22px;
+}
+
+.atlas-card {
+  border-color: rgba(181, 143, 30, 0.34);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 226, 0.56), rgba(255, 255, 255, 0.98)),
+    #ffffff;
+}
+
+.atlas-media img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.code-kicker.project-award {
+  color: #9a6700;
+}
+
+.code-body .project-lead {
+  color: #2b3e55;
+  font-weight: 600;
 }
 
 .code-kicker {

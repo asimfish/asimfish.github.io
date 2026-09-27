@@ -7,3 +7,4 @@ mkdocs-glightbox
 mkdocs-video
 # mkdocs-rss-plugin
 # rich # for mkdocs-toc-plugin
+mkdocs-statistics-plugin==0.1.5

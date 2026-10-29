@@ -361,19 +361,10 @@ h3 {
     #ffffff;
 }
 
-.pub-card.text-only {
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.contribution-note,
-.media-caption {
+.contribution-note {
   margin: 8px 0 0;
   color: var(--muted);
   font-size: 0.8rem;
-}
-
-.project-visual {
-  min-width: 0;
 }
 
 .pub-media,

@@ -55,14 +55,20 @@ uploaded resume content.
 
 ## Content and media sources
 
-- Bench2Dex uses the title and abbreviated author order from its
+- Bench2Dex uses the title and full author list, in order, from its
   [project homepage](https://bench2dex.github.io/). The linked
   [arXiv version](https://arxiv.org/abs/2609.15726) uses a different title;
   the ICLR 2027 submission status was supplied by Yufeng Li.
 - Remembering What Matters is featured in Selected Publications. Its author order
   and equal-contribution marks follow the October 2026 CV and
   [coauthor's homepage](https://changwinde.github.io/); its method summary follows
-  the CV. The linked OpenReview PDF required browser verification during this update.
+  the CV. The title, author order, and abstract were also checked against the
+  [NeurIPS conference entry](https://neurips.cc/virtual/2026/poster/153954), which
+  links to the same [OpenReview paper](https://openreview.net/pdf?id=HIcqPaIuYq).
+  `assets/paper-real/remembering-what-matters.png` is Figure 1, rendered from page 2
+  of the local paper copy `12027_Remembering_What_Matters.pdf` (the direct OpenReview
+  download returned HTTP 403). The figure is cropped to its original bounds, with
+  no changes to its content.
   The update date uses the official
   [NeurIPS 2026 author notification date](https://neurips.cc/Conferences/2026/Dates)
   (September 24, AoE), rather than an independently verified individual decision timestamp.
@@ -70,3 +76,5 @@ uploaded resume content.
   [SuperTranslate](https://github.com/asimfish/super_translate/blob/main/docs/assets/promo/v15/cover-landscape.png).
   Its original video wording, media links, and measurement context are documented in
   [PRESENTATION.md](https://github.com/asimfish/super_translate/blob/main/docs/PRESENTATION.md).
+  The English project description follows the
+  [English README](https://github.com/asimfish/super_translate/blob/main/README_en.md).

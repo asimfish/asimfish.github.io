@@ -52,3 +52,21 @@ https://asimfish.github.io
 The homepage content intentionally omits phone number and other unnecessary
 personal details because GitHub Pages is public. The linked CV PDF preserves the
 uploaded resume content.
+
+## Content and media sources
+
+- Bench2Dex uses the title and abbreviated author order from its
+  [project homepage](https://bench2dex.github.io/). The linked
+  [arXiv version](https://arxiv.org/abs/2609.15726) uses a different title;
+  the ICLR 2027 submission status was supplied by Yufeng Li.
+- Remembering What Matters is featured in Selected Publications. Its author order
+  and equal-contribution marks follow the October 2026 CV and
+  [coauthor's homepage](https://changwinde.github.io/); its method summary follows
+  the CV. The linked OpenReview PDF required browser verification during this update.
+  The update date uses the official
+  [NeurIPS 2026 author notification date](https://neurips.cc/Conferences/2026/Dates)
+  (September 24, AoE), rather than an independently verified individual decision timestamp.
+- `assets/supertranslate/cover-landscape.png` is the unmodified V15 video cover from
+  [SuperTranslate](https://github.com/asimfish/super_translate/blob/main/docs/assets/promo/v15/cover-landscape.png).
+  Its original video wording, media links, and measurement context are documented in
+  [PRESENTATION.md](https://github.com/asimfish/super_translate/blob/main/docs/PRESENTATION.md).

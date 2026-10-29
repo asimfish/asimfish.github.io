@@ -92,6 +92,13 @@
         <h2>Updates</h2>
         <table>
           <tbody>
+            <tr>
+              <td>[Sep. 24, 2026]</td>
+              <td>
+                <a href="https://openreview.net/pdf?id=HIcqPaIuYq"><strong>Remembering What Matters</strong></a>
+                accepted to <strong>NeurIPS 2026</strong>.
+              </td>
+            </tr>
             <tr class="award-update">
               <td>[Sep. 2026]</td>
               <td>
@@ -115,10 +122,6 @@
               <td><strong>GuidedVLA</strong>, RSS 2026.</td>
             </tr>
             <tr>
-              <td>[2026]</td>
-              <td><strong>Remembering What Matters</strong>, NeurIPS 2026.</td>
-            </tr>
-            <tr>
               <td>[Apr. 2025]</td>
               <td>
                 <strong>Optimal Flow Transport and its Entropic Regularization</strong>, ICLR 2025.
@@ -138,6 +141,37 @@
         <h2>Selected Publications</h2>
 
         <div class="pub-list">
+          <article class="pub-card text-only" id="remembering-what-matters">
+            <div class="pub-body">
+              <h3 class="pub-title">
+                Remembering What Matters: From Markovian to Subtask-Causal Memory in VLA Policies
+              </h3>
+              <p class="authors">
+                <a href="https://openreview.net/profile?id=~Peishuo_Wang2">Peishuo Wang*</a>,
+                <a href="https://openreview.net/profile?id=~Fengshuo_Bai1">Fengshuo Bai*</a>,
+                <a href="https://openreview.net/profile?id=~Yufeng_Li2"><em>Yufeng Li*</em></a>,
+                <a href="https://openreview.net/profile?id=~Tawei_Chou1">Tawei Chou</a>,
+                <a href="https://openreview.net/profile?id=~Yinda_Xu1">Yinda Xu</a>,
+                <a href="https://openreview.net/profile?id=~Ying_Wen1">Ying Wen</a>,
+                <a href="https://openreview.net/profile?id=~Yaodong_Yang1">Yaodong Yang</a>,
+                <a href="https://openreview.net/profile?id=~Chen_Gao3">Chen Gao</a>,
+                <a href="https://openreview.net/profile?id=~Zhenzhe_Zheng1">Zhenzhe Zheng</a>,
+                <a href="https://openreview.net/profile?id=~Fan_Wu10">Fan Wu</a>
+              </p>
+              <p class="venue">Conference on Neural Information Processing Systems (NeurIPS), 2026</p>
+              <p class="abstract">
+                A two-level memory framework for VLA policies that retrieves relevant history through
+                a subtask dependency graph, selects key frames around state changes, and integrates
+                memory into a frozen backbone through graph-aware cross-attention.
+              </p>
+              <p class="contribution-note">* Equal contribution.</p>
+              <div class="pub-links">
+                <a href="https://openreview.net/pdf?id=HIcqPaIuYq">Paper</a>
+                <a href="https://openreview.net/forum?id=HIcqPaIuYq">OpenReview</a>
+              </div>
+            </div>
+          </article>
+
           <article class="pub-card featured">
             <div class="pub-media video-media">
               <video
@@ -269,6 +303,21 @@
         <div class="manuscript-block">
           <h3>Additional Publications &amp; Manuscripts</h3>
           <ul>
+            <li id="bench2dex">
+              <strong>
+                Bench2Dex: A Bimanual Manipulation Benchmark across Dexterous Hands with Simulated
+                Fingertip Visuo-Tactile Support
+              </strong>
+              <span class="manuscript-authors">
+                Z. Yang, Y. Zhang, D. Zhang, C. Jiang, X. Liu, <em>Y. Li</em>, et al.
+              </span>
+              <span>Submitted to ICLR, 2027.</span>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2609.15726">Paper</a>
+                <a href="https://bench2dex.github.io/">Homepage</a>
+                <a href="https://github.com/Bench2Dex/Bench2Dex">Code</a>
+              </div>
+            </li>
             <li>
               <strong>
                 Towards Practical Large-scale Dynamical Heterogeneous Graph Embedding: Cold-start
@@ -303,24 +352,6 @@
                 Y. Li, Y. Yang, H. Zhang, M. Li, Y. Chen, et al.
               </span>
               <span>Submitted to ICLR, 2026.</span>
-            </li>
-            <li>
-              <strong>
-                Remembering What Matters: From Markovian to Subtask-Causal Memory in VLA Policies
-              </strong>
-              <span class="manuscript-authors">
-                <a href="https://openreview.net/profile?id=~Peishuo_Wang2">Peishuo Wang</a>,
-                <a href="https://openreview.net/profile?id=~Fengshuo_Bai1">Fengshuo Bai</a>,
-                <a href="https://openreview.net/profile?id=~Yufeng_Li2"><em>Yufeng Li</em></a>,
-                <a href="https://openreview.net/profile?id=~Tawei_Chou1">Tawei Chou</a>,
-                <a href="https://openreview.net/profile?id=~Yinda_Xu1">Yinda Xu</a>,
-                <a href="https://openreview.net/profile?id=~Ying_Wen1">Ying Wen</a>,
-                <a href="https://openreview.net/profile?id=~Yaodong_Yang1">Yaodong Yang</a>,
-                <a href="https://openreview.net/profile?id=~Chen_Gao3">Chen Gao</a>,
-                <a href="https://openreview.net/profile?id=~Zhenzhe_Zheng1">Zhenzhe Zheng</a>,
-                <a href="https://openreview.net/profile?id=~Fan_Wu10">Fan Wu</a>
-              </span>
-              <span>NeurIPS, 2026.</span>
             </li>
             <li>
               <strong>
@@ -393,6 +424,42 @@
       <section class="projects" id="code">
         <h2>Selected Projects</h2>
         <div class="project-list">
+          <article class="code-card" id="supertranslate">
+            <div class="project-visual">
+              <a class="code-media" href="https://b23.tv/dNg3JYK" aria-label="Watch the SuperTranslate introduction on Bilibili">
+                <img
+                  src="assets/supertranslate/cover-landscape.png"
+                  alt="SuperTranslate: 让 Agent 帮你成为 Native Reader，零压力读论文"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+              </a>
+              <p class="media-caption" lang="zh-CN">
+                V15 视频封面（2026-10-12）；图中耗时为当时开发版本的一次实测。
+              </p>
+            </div>
+            <div class="code-body">
+              <div class="code-kicker">Native Reader · Open-source research tool</div>
+              <h3>SuperTranslate</h3>
+              <p class="project-lead" lang="zh-CN">
+                让 Agent 帮你成为 Native Reader，零压力读论文。
+              </p>
+              <p lang="zh-CN">
+                开源的 Native 科研论文翻译工具，零压力帮你丝滑读论文。
+                版式对齐原文；该翻的翻，该留的留；专业的科研术语库；翻完，还要查一遍。
+                网页、Agent Skill、macOS 悬窗、Zotero，随用随翻。
+              </p>
+              <div class="pub-links">
+                <a href="https://asimfish.github.io/super_translate/">Showcase</a>
+                <a href="https://github.com/asimfish/super_translate">GitHub</a>
+                <a href="https://b23.tv/dNg3JYK">Video (Bilibili)</a>
+                <a href="https://asimfish.github.io/super_translate/slides.html">Slides</a>
+                <a href="https://xhslink.cn/o/95CUF7S0njW">Xiaohongshu</a>
+              </div>
+            </div>
+          </article>
+
           <article class="code-card atlas-card">
             <a
               class="code-media atlas-media"
@@ -523,7 +590,7 @@
       </section>
 
       <footer>
-        <p>Last updated: September 2026. Built with GitHub Pages.</p>
+        <p>Last updated: October 2026. Built with GitHub Pages.</p>
       </footer>
     </main>
 
